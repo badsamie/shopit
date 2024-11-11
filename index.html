@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">ShopIt</div>
+      <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="products">
+        <div class="card">
+          <h3>Samsung galaxy s20 ultra</h3>
+          <img
+            src="https://login.kg/image/cache/catalog/new/Phones/Samsung/S20%20Ultra%205G/10-500x400.jpg"
+            alt=""
+          />
+          <button>Купить!</button>
+        </div>
+        <div class="card">
+          <h3>Iphone 16 pro max</h3>
+          <img
+            src="https://fishka.kg/image/cache/catalog/Products/Smartphone/Apple/16%20Pro/iphh11-1000x1000.jpg"
+            alt=""
+          />
+          <button>Купить!</button>
+        </div>
+        <div class="card">
+          <h3>Xiaomi 14 ultra</h3>
+          <img
+            src="https://gudini.kg/image/cache/catalog/Xiaomi/14%20ultra/xiaomi-14-ultra-white-r-800x800.jpg"
+            alt=""
+          />
+          <button>Купить!</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      const bmenu = document.getElementById("burger-menu");
+      const nmenu = document.getElementById("nav-menu");
+      bmenu.addEventListener("click", () => {
+        nmenu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
